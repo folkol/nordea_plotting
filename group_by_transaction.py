@@ -9,7 +9,7 @@ with open('categories.json') as f:
 
 def categorize(tx):
     for category, patterns in categories.items():
-        if any(pattern.lower() in tx.lower() for pattern in patterns):
+        if any(pattern in tx for pattern in patterns):
             return category
     else:
         print('Uncategorixed: ' + tx)

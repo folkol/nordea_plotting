@@ -1,10 +1,11 @@
 {
-  "ICA": [
+  "\"ICA\"": [
     "ICA SUPERMARKET",
     "COOP KONSUM BROMMAPL"
   ],
   "Kaffe": [
     "ESPRESSO HOUSE 218",
+    "Espresso House",
     "BÖNOR O BLAD MOOD",
     "BARISTASHOPEN SE"
   ],
@@ -26,6 +27,7 @@
   ],
   "Boende": [
     "Fastum",
+    "FASTUM",
     "Autogiro SBAB",
     "BAHNHOF",
     "LÄNSFÖRSÄKRINGAR",
@@ -53,8 +55,9 @@
     "BEST BIKES SVERIGE"
   ],
   "Pizza": [
-    "pizza",
-    "pizzeria",
+    "PIZZA",
+    "PIZZERIA",
+    "Onlinepizza",
     "KLARNA AB"
   ],
   "Restaurang": [
@@ -120,7 +123,7 @@
     "TAXI STOCKHOLM"
   ],
   "Apotek": [
-    "Apotek",
+    "APOTEK",
     "Kortköp 160409 SVEA"
   ],
   "Kort": [
@@ -139,7 +142,7 @@
     "AKADEMIBOKHANDELN AB",
     "OFFICE DEPOT SVENSKA",
     "7 ELEVEN 4316110",
-    "Pressbyrån",
+    "PRESSBYRÅN",
     "OKQ8",
     "SHOP N GO",
     "WB COFFEE SHOP",
