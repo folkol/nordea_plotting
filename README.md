@@ -2,7 +2,9 @@
 
 This script will plot a bar chart of transactions categorized according to `categories.json`.
 
-(The categories will be considered a match if at least one of the patterns are a substring of the 'Transaktion'-entry of the given transaction...)
+The categories will be considered a match if at least one of the patterns are a substring of the 'Transaktion'-entry of the given transaction
+
+(Actualy, this has more to do with me fooling around with [Pandas](http://pandas.pydata.org) than with Nordea dumps...)
 
 ## How?
 
