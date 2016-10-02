@@ -42,6 +42,7 @@ This script will plot a bar chart of transactions categorized according to `cate
 
 #### Example `categories.json`
 
+    $ cat categories.json.example
 	{
 	  "\"ICA\"": [
 	    "ICA SUPERMARKET",
@@ -51,50 +52,6 @@ This script will plot a bar chart of transactions categorized according to `cate
 	    "ESPRESSO HOUSE 218",
 	    "Espresso House",
 	    "BÖNOR O BLAD MOOD",
-	    "BARISTASHOPEN SE"
-	  ],
-	  "Hårdvara": [
-	    "WEBHALLEN",
-	    "MATERIAL AB",
-	    "KUNGSHOLMENS JERN AB",
-	    "SAHLINS GUMMIVERKSTA"
-	  ],
-	  "SL": [
-	    "SL BROMMAPLAN T BANA",
-	    "SL HOTORGET SODRA T",
-	  ],
-	  "Motion": [
-	    "FITNESS24",
-	    "BEST BIKES SVERIGE"
-	  ],
-	  "Restaurang": [
-	    "RESTAURANG",
-	    "BUN MEAT BUN",
-	    "SUSHI",
-	    "TEXAS LONGHORN",
-	  ],
-	  "Öl": [
-	    "COPPERFIELDS",
-	    "FOLKBAREN",
-	    "PUB ANCHOR",
-	    "SYSTEMBOLAGET",
-	    "ENGELEN KOLINGEN",
-	    "WIRSTRÖMS PUB",
-	  ],
-	  "Mjukvara": [
-	    "ADOBE  PHOTOGPHY PLA",
-	    "Amazon web services",
-	    "SPOTIFY",
-	  ],
-	  "CSN": [
-	    "Centrala Studie"
-	  ],
-	  "Småkrafs": [
-	    "AKADEMIBOKHANDELN AB",
-	    "OFFICE DEPOT SVENSKA",
-	  ],
-	  "Nöje": [
-	    "FJERILSHUSET HAGA TR",
-	    "SF BIO"
-	  ]
-	}
+	    "BARISTASHOPEN SE",
+      ...
+    }
