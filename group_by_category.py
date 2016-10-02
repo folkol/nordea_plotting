@@ -11,12 +11,10 @@ with open('categories.json') as f:
 def categorize(tx):
     matches = [category for (category, patterns) in categories.items() if any(pattern in tx for pattern in patterns)]
 
-    if len(matches) > 0:
-        raise Exception('Ambiguous pattern, {} matches {}', tx, matches)
-
-
     if len(matches) == 1:
         return matches[0]
+    elif len(matches) > 1:
+        raise Exception('Ambiguous pattern, {} matches {}', tx, matches)
     else:
         print('Uncategorixed: ' + tx)
         return "Övrigt"
