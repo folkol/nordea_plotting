@@ -4,13 +4,14 @@ from utils import parse_float
 
 def f(x):
     if "espresso" in x.lower():
-        print("Classifying {} as espresso".format(x))
         return "Kaffe"
     elif "ica supermarket" in x.lower():
-        print("Classifying {} as ICA".format(x))
         return "ICA"
+    elif "onlinepizza" in x.lower():
+        return "PIZZA"
+    elif "sbab" in x.lower():
+        return "SBAB"
     else:
-        print("Couldn't classify {}".format(x))
         return "Övrigt"
 
 
@@ -24,6 +25,8 @@ data = data[data['Belopp'] < 0]  # Only consider withdrawals...
 
 data['Belopp'] = data['Belopp'].map(lambda x: -x)
 data['Kategori'] = data['Transaktion'].map(f)
+
+print(data)
 
 data = data.groupby('Kategori')['Belopp'].sum()
 
