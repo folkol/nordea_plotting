@@ -26,3 +26,75 @@ This script will plot a bar chart of transactions categorized according to `cate
 - `$ source venv/bin/activate`
 - `$ pip install -r requirements.txt`
 - `python group_by_category.py`
+
+#### Sample dump
+
+    $ cat export.example
+	Datum,Transaktion,Kategori,Belopp,Saldo
+	2016-08-31,Omsättning lån 3065 82 24190,,"-3.402,00","22.131,55"
+	2016-08-31,Kortköp 160829 ICA SUPERMARKET BROM,,"-365,09","25.533,55"
+	2016-08-31,Kortköp 160829 SKILLCAPPED,,"-42,77","25.898,64"
+	2016-08-31,Betalning PG 4176103-2 Fastum,,"-2.835,00","25.941,41"
+	2016-08-31,Autogiro BAHNHOF,,"-1.147,00","28.776,41"
+	2016-08-31,Autogiro FOLKSAM,,"-318,00","29.923,41"
+	2016-08-30,Kortköp 160828 ICA SUPERMARKET BROM,,"-290,64","30.241,41"
+	...
+
+#### Example `categories.json`
+
+	{
+	  "\"ICA\"": [
+	    "ICA SUPERMARKET",
+	    "COOP KONSUM BROMMAPL"
+	  ],
+	  "Kaffe": [
+	    "ESPRESSO HOUSE 218",
+	    "Espresso House",
+	    "BÖNOR O BLAD MOOD",
+	    "BARISTASHOPEN SE"
+	  ],
+	  "Hårdvara": [
+	    "WEBHALLEN",
+	    "MATERIAL AB",
+	    "KUNGSHOLMENS JERN AB",
+	    "SAHLINS GUMMIVERKSTA"
+	  ],
+	  "SL": [
+	    "SL BROMMAPLAN T BANA",
+	    "SL HOTORGET SODRA T",
+	  ],
+	  "Motion": [
+	    "FITNESS24",
+	    "BEST BIKES SVERIGE"
+	  ],
+	  "Restaurang": [
+	    "RESTAURANG",
+	    "BUN MEAT BUN",
+	    "SUSHI",
+	    "TEXAS LONGHORN",
+	  ],
+	  "Öl": [
+	    "COPPERFIELDS",
+	    "FOLKBAREN",
+	    "PUB ANCHOR",
+	    "SYSTEMBOLAGET",
+	    "ENGELEN KOLINGEN",
+	    "WIRSTRÖMS PUB",
+	  ],
+	  "Mjukvara": [
+	    "ADOBE  PHOTOGPHY PLA",
+	    "Amazon web services",
+	    "SPOTIFY",
+	  ],
+	  "CSN": [
+	    "Centrala Studie"
+	  ],
+	  "Småkrafs": [
+	    "AKADEMIBOKHANDELN AB",
+	    "OFFICE DEPOT SVENSKA",
+	  ],
+	  "Nöje": [
+	    "FJERILSHUSET HAGA TR",
+	    "SF BIO"
+	  ]
+	}
