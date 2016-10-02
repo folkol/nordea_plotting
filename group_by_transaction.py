@@ -27,7 +27,7 @@ data['Kategori'] = data['Transaktion'].map(f)
 
 data = data.groupby('Kategori')['Belopp'].sum()
 
-data.plot(kind='bar')
+data.sort_values(ascending=False).plot(kind='bar', title='Utgifter')
 
 import matplotlib.pyplot as plt
 plt.show()
