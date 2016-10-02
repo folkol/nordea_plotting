@@ -29,9 +29,9 @@ The categories will be considered a match if at least one of the patterns are a 
 - `$ pip install -r requirements.txt`
 - `python group_by_category.py`
 
-#### Sample dump
+#### Sample `export.csv`
 
-    $ cat export.example
+    $ cat export.csv.example
 	Datum,Transaktion,Kategori,Belopp,Saldo
 	2016-08-31,Omsättning lån 3065 82 24190,,"-3.402,00","22.131,55"
 	2016-08-31,Kortköp 160829 ICA SUPERMARKET BROM,,"-365,09","25.533,55"
@@ -42,7 +42,7 @@ The categories will be considered a match if at least one of the patterns are a 
 	2016-08-30,Kortköp 160828 ICA SUPERMARKET BROM,,"-290,64","30.241,41"
 	...
 
-#### Example `categories.json`
+#### Sample `categories.json`
 
     $ cat categories.json.example
 	{
