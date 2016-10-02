@@ -4,13 +4,19 @@ import matplotlib.pyplot as plt
 
 with open('categories.json') as f:
     import json
+
     categories = json.load(f)
 
 
 def categorize(tx):
-    for category, patterns in categories.items():
-        if any(pattern in tx for pattern in patterns):
-            return category
+    matches = [category for (category, patterns) in categories.items() if any(pattern in tx for pattern in patterns)]
+
+    if len(matches) > 0:
+        raise Exception('Ambiguous pattern, {} matches {}', tx, matches)
+
+
+    if len(matches) == 1:
+        return matches[0]
     else:
         print('Uncategorixed: ' + tx)
         return "Övrigt"
